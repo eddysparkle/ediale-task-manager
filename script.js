@@ -217,3 +217,5 @@ closeNotification.addEventListener("click", function() {
     .querySelector("#notification")
     .classList.remove("show");
 })
+
+alert("JavaScript is connected!");
