@@ -218,4 +218,4 @@ closeNotification.addEventListener("click", function() {
     .classList.remove("show");
 })
 
-alert("JavaScript is connected!");
+
