@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +12,91 @@
 </head>
 
 <body>
-<div class="app">
 
-  <header class="app-header">
-    <p class="eyebrow">PROJECT 02</p>
+  <div class="app">
 
-    <h1>Task Manager</h1>
+    <header class="app-header">
+      <p class="eyebrow">PROJECT 02</p>
 
-    <p>
-      Organize your day. Get things done.
-    </p>
-  </header>
+      <h1>Task Manager</h1>
+
+      <p>
+        Organize your day. Get things done.
+      </p>
+    </header>
 
 
-  <div class="task-input">
+    <div class="task-input">
 
-    <input
-      type="text"
-      id="task-input"
-      placeholder="What needs to be done?"
-    >
-    
-    <input
-  type="datetime-local"
-  id="task-due"
->
+      <input
+        type="text"
+        id="task-input"
+        placeholder="What needs to be done?"
+      >
 
-    <button id="add-task">Add Task</button>
+      <input
+        type="datetime-local"
+        id="task-due"
+      >
+
+      <button id="add-task">
+        Add Task
+      </button>
+
+    </div>
+
+
+    <div class="task-controls">
+
+      <div class="task-count">
+        <span id="task-count">0 tasks</span>
+      </div>
+
+      <button id="clear-completed">
+        Clear Completed
+      </button>
+
+    </div>
+
+
+    <ul id="task-list"></ul>
+
+
+    <div id="empty-state">
+
+      <p>No tasks yet. Add your first task above.</p>
+
+    </div>
+
+
+    <div id="notification" class="notification">
+
+      <div class="notification-icon">
+        🔔
+      </div>
+
+      <div class="notification-content">
+
+        <strong>Task Reminder</strong>
+
+        <p id="notification-message"></p>
+
+      </div>
+
+      <button
+        id="close-notification"
+        aria-label="Close notification"
+      >
+        ×
+      </button>
+
+    </div>
+
+  </div>
+
 
   <script src="script.js"></script>
+
 </body>
+
 </html>
